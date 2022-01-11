@@ -1,1 +1,3 @@
 contract V1.0
+
+编写合约后取消注释driver一天.Serve(new(ordinate))并build生成二进制文件，后注释掉进行测试

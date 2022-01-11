@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"github.com/xuperchain/contract-sdk-go/code"
+	"github.com/xuperchain/contract-sdk-go/driver"
 )
 
 type ordinate struct {}
@@ -87,6 +88,6 @@ func (o *ordinate) GetAllLawEnforcements(ctx code.Context) code.Response {
 func main() {
 	//CreateContractAccount()
 	//DeployContract()
-	InvokeUploadLawEnforcement("12f4189a58be48828125af7c41806aab", "district_B", "Alice", "2021-12-10 22:57:58", "qwed7b11d1bbb5be258ca4024f477d50ec047ade9cf04853eeb540b2b0b51f73")
-	//driver.Serve(new(ordinate))
+	//InvokeUploadLawEnforcement("12f4189a58be48828125af7c41806aab", "district_B", "Alice", "2021-12-10 22:57:58", "qwed7b11d1bbb5be258ca4024f477d50ec047ade9cf04853eeb540b2b0b51f73")
+	driver.Serve(new(ordinate))
 }
